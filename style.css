@@ -1,0 +1,72 @@
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    width: 100%;
+}
+
+/* utilitaires */
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: inline-block;
+}
+
+/* Boutons*/
+
+button {
+    color: white;
+    background-color: #6852ED;
+    border-style: none;
+    border-radius: 1.563rem;
+    font-family: 'Poppins';
+    font-size: 1rem;
+}
+
+/* NAVBAR */
+
+nav>ul {
+    list-style: none;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+}
+
+#blue-pill {
+    height: 85.563rem;
+    width: 42.063rem;
+    background-color: #6852ED;
+    border-radius: 20rem;
+    transform: rotate(44deg);
+    position: absolute;
+    top: -350px;
+    right: -100px;
+    margin: 0;
+}
+
+.header-box {
+    width: 27.25rem;
+    height: 18.313rem;
+}
+
+/* TESTIMONIAL */
+
+#testimonial {
+    width: 100%;
+    height: 32.813rem;
+    background-color: #F6F7FA;
+}
