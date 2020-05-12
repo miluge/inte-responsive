@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <title>Elipso</title>
 </head>
@@ -28,14 +29,11 @@
                 <button>Free consultation</button>
                 <a href="#">View projects</a>
             </div>
-        </div>   
-        <div id="blue-pill"></div>
     </header>
     <main>
-        <section id="price">
-            <div class="d-flex">
-                <ul>
-                    <li>Basic</li>
+        <section id="price" class="d-flex">
+                <ul class="price-block">
+                    <li class="d-block">Basic<button class="best-btn">Best choice</button></li>
                     <li>15$</li>
                     <li>Per month</li>
                     <li>Free updates</li>
@@ -43,9 +41,9 @@
                     <li>Oustanding support</li>
                     <li>Unlimited storage</li>
                     <li>Build responsive website</li>
-                    <li><button>Getting started</button></li>
+                    <li><button class="start-btn">Getting started</button></li>
                 </ul>
-                <ul>
+                <ul class="price-block">
                     <li>Standard</li>
                     <li>37$</li>
                     <li>Per month</li>
@@ -54,9 +52,9 @@
                     <li>Oustanding support</li>
                     <li>Unlimited storage</li>
                     <li>Build responsive website</li>
-                    <li><button>Getting started</button></li>
+                    <li><button class="start-btn">Getting started</button></li>
                 </ul>
-                <ul>
+                <ul class="price-block">
                     <li>Advance</li>
                     <li>42$</li>
                     <li>Per month</li>
@@ -65,9 +63,8 @@
                     <li>Oustanding support</li>
                     <li>Unlimited storage</li>
                     <li>Build responsive website</li>
-                    <li><button>Getting started</button></li>
+                    <li><button class="start-btn">Getting started</button></li>
                 </ul>
-            </div>
         </section>
         <section id="testimonial">
             <h2>Happy clients about us</h2>
@@ -78,9 +75,9 @@
         </section>
         <section id="service">
         </section>
-        <section id="community">
+        <section id="community" class="d-flex">
             <div>
-                <img src="img/Logo-White.png" alt="#">
+                <img src="img/Bg.png" alt="#">
             </div>
             <div>
                 <h2>We serve fine services in creative community</h2>
@@ -93,7 +90,7 @@
         </section>
     </main>
     <footer>
-        <div class="subscribe d-block">
+        <div class="subscribe d-flex">
             <p>Subscribe to our newsletters</p>
             <button>Send</button>
         </div>
