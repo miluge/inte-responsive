@@ -49,6 +49,14 @@ section {
     width: 100%;
 }
 
+.container-wrapper-head {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
 .d-flex {
     display: flex;
 }
@@ -64,6 +72,14 @@ section {
     text-align: center;
 }
 
+.li-left-indent {
+    margin-left: 1.25rem;
+}
+
+.li-top-aligner {
+    margin-top: 3.55rem;
+}
+
 /* Boutons*/
 
 button {
@@ -73,6 +89,10 @@ button {
     border-radius: 1.563rem;
     font-family: 'Poppins';
     font-size: 1rem;
+    font-style: bold;
+    height: 3.125rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 }
 
 .best-btn {
@@ -82,25 +102,27 @@ button {
     border-radius: 1.563rem;
     font-family: 'Poppins';
     font-size: 1rem;
+    padding: 0rem;
 }
 
 .start-btn {
     margin-top: 2rem;
 }
 
+
 /* PILL */
 
-header::before {
+.container-wrapper-head::before {
     content: "";
     position: absolute;
     width: 42.063rem;
     height: 85.563rem;
     border-radius: 31.25rem;
-    top: -35%;
-    left: 88%;
+    top: -28%;
+    left: 65%;
     z-index: -1;
     background: url(img/catbug_round.jpg) 0 0 repeat;
-    transform: rotate(44deg);
+    transform: rotate(47deg);
   }
   
 /* HEADER and NAVBAR */
@@ -142,6 +164,7 @@ nav>ul>li {
 
 #navbar>a {
     margin-top: 2.5rem;
+    margin-right: 1rem;
 }
 
 
@@ -197,6 +220,124 @@ div.mid-align:nth-child(2) > p:nth-child(1) > img:nth-child(1) {
     background-color: #6852ED;
 }
 
+/* SERVICES */
+
+#service {
+    width: 71.25rem;
+    display: flex;
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    margin: 1.25rem;
+    width: 100%;
+    max-width: 21.5rem;
+    height: 15.438rem;
+    border-radius: 0.625rem;
+    box-shadow: 0px 0px 21px 2px #DEDEDE;
+    padding-left: 1rem;
+    align-items: start;
+    justify-content: center;
+}
+
+.box-group-right {
+    margin-top: 1.75rem;
+}
+
+.service-text {
+    width: 21rem;
+    height: 18.438rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 8rem;
+    margin-left: 1.4rem;
+}
+
+/* ARTICLE HOVER */
+
+article.box {
+	color: #554D89;
+	background-color: #fff;
+	display: block;
+	width: 21.5rem;
+    height: 15.438rem;
+    padding-bottom: 2rem;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	font-family: 'Poppins', sans-serif;
+}
+
+.content {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	margin: auto;
+	padding: 0 2em 0 1.7em;
+	z-index: 2;
+	height: 3em;
+	transition: all .2s ease;
+}
+
+article:hover .content {
+	height: 8em;
+	transition: all .2s ease;
+}
+
+article:hover {
+    background-color: #6852ED;
+    color: white;
+}
+
+h3 {
+    font-style: 'Poppins', sans-serif;
+	font-size: 1.375em;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+}
+
+p.fix {
+    font-size: 1.125em;
+	font-weight: normal;
+	margin: 0 0 5px 0;
+}
+
+p.description {
+	height: 0;
+	opacity: 0;
+	visibility: hidden;
+	margin-bottom: 3rem;
+	line-height: 1.5em;
+	
+}
+
+article:hover p{
+    height: 3em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+	opacity: 1;
+	visibility: visible;
+	transition: all .2s ease;
+}
+
+.link {
+	height: 1em;
+	line-height: 1.5;
+	transition: all .2s ease;
+	display: block;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+article:hover .link {
+    transition: all .2s ease;
+    margin-bottom: 2rem;
+}
+
 /* COMMUNITY */
 
 #community {
@@ -213,6 +354,10 @@ div.mid-align:nth-child(2) > p:nth-child(1) > img:nth-child(1) {
     margin-left: 4.375rem;
 }
 
+.a-ct {
+    margin-left: 1.5rem;
+}
+
 #community > div:nth-child(1) > img:nth-child(1) {
     border-radius: 250px 250px 250px 50px;
 }
@@ -226,8 +371,23 @@ footer {
     align-items: center;
 }
 
-.footer-links {
+.footer-links-contact {
     line-height: 1.688rem;
+    height: 100%;
+    max-height: 187px;
+    width: 100%;
+    max-width: 286px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    line-height: 1.688rem;
+    height: 100%;
+    max-height: 157px;
+    width: 100%;
+    max-width: 258px;
 }
 
 .footer-links-title {
@@ -238,11 +398,13 @@ footer {
 }
 
 .subscribe {
-    width: 100%;
     display: flex;
+    color: white;
     background-color: #6852ED;
     border-radius: 0.55rem;
     justify-content: space-between;
+    padding-left: 4.30rem;
+    padding-right: 2rem;
 }
 
 .footer-box {
@@ -253,9 +415,17 @@ footer {
 .footer-block {
     margin-top: 3.5rem;
     max-height: 25.375rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .copyright {
     width: 100%;
     justify-content: start;
+}
+
+.news-btn {
+    border-style: solid;
+    border-color: #707070;
+    margin-top: 0.35rem;
 }
