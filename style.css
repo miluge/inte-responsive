@@ -61,10 +61,11 @@ section {
     margin-bottom: 9.375rem;
 }
 
-.container-wrapper {
+.container-wrapper-head {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
@@ -78,7 +79,7 @@ section {
 }
 
 }
-.container-wrapper-head {
+.container-wrapper {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -170,7 +171,7 @@ button {
     width: 42.063rem;
     height: 85.563rem;
     border-radius: 31.25rem;
-    top: -28%;
+    top: -32%;
     left: 65%;
     z-index: -1;
     background: url(img/catbug_round.jpg) 0 0 repeat;
@@ -522,3 +523,11 @@ footer {
 
 /*-----------Media queries-------------*/
 
+@custom-media --viewport-4 (min-width: 480px);
+
+@custom-media --viewport-7 (min-width: 768px);
+
+@media screen and (min-width: 992px) {
+    
+
+@custom-media --viewport-12 (min-width: 1200px);
