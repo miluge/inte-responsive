@@ -20,21 +20,23 @@ p {
 
 a {
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
 }
 
 h1 {
     color: #554D89;
     font-family: 'Poppins', sans-serif;
     font-size: 3.125rem;
-    font-style: bold;
     margin-bottom: 0px;
+    font-weight: bold;
 }
 
 h2 {
     color: #554D89;
     font-family: 'Poppins', sans-serif;
     font-size: 2.125rem;
-    font-style: bold;
+    font-weight: bold;
 }
 
 /* utilitaires */
@@ -80,6 +82,16 @@ section {
     margin-top: 3.55rem;
 }
 
+.line-height {
+    line-height: 2.1rem;
+}
+
+.bold {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+}
+
 /* Boutons*/
 
 button {
@@ -89,26 +101,26 @@ button {
     border-radius: 1.563rem;
     font-family: 'Poppins';
     font-size: 1rem;
-    font-style: bold;
+    font-weight: bold;
     height: 3.125rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
 }
 
 .best-btn {
+    height: 2rem;
     color: #EF7171;
     background-color: #EDEFF4;
     border-style: none;
     border-radius: 1.563rem;
     font-family: 'Poppins';
     font-size: 1rem;
-    padding: 0rem;
+    margin-left: 6.25rem;
 }
 
 .start-btn {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
-
 
 /* PILL */
 
@@ -122,7 +134,7 @@ button {
     left: 65%;
     z-index: -1;
     background: url(img/catbug_round.jpg) 0 0 repeat;
-    transform: rotate(47deg);
+    transform: rotate(44deg);
   }
   
 /* HEADER and NAVBAR */
@@ -150,11 +162,8 @@ header {
 }
 
 .head-btn {
-    margin-top: 2rem;
-    margin-right: 1.5rem;
+    margin-top: 4rem;
 }
-
-
 
 /* NAV */
 
@@ -167,6 +176,12 @@ nav>ul>li {
     margin-right: 1rem;
 }
 
+.nav-links:hover {
+    border-top: 8px solid #554D89;
+    padding: 3.05rem;
+    border-width: 1.75rem;
+
+}
 
 /* MAIN */
 
@@ -189,12 +204,27 @@ main {
     display: flex;
     flex-direction: column;
     margin: 1.25rem;
+    padding-left: 2rem;
     width: 360px;
     height: 616px;
     border-radius: 0.625rem;
     box-shadow: 0px 0px 21px 2px #DEDEDE;
     align-items: start;
     justify-content: center;
+    color: #554D89;
+}
+
+.money {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 3.125rem;
+    margin-top: 1.5rem;
+}
+
+.month {
+    margin-bottom: 3.2rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
 }
 
 /* TESTIMONIAL */
@@ -252,8 +282,12 @@ div.mid-align:nth-child(2) > p:nth-child(1) > img:nth-child(1) {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-top: 8rem;
+    margin-top: 11rem;
     margin-left: 1.4rem;
+}
+
+.service-btn {
+    margin-top: 3rem;
 }
 
 /* ARTICLE HOVER */
@@ -294,7 +328,7 @@ article:hover {
 }
 
 h3 {
-    font-style: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 	font-size: 1.375em;
 	font-weight: bold;
 	margin: 0 0 5px 0;
@@ -356,6 +390,10 @@ article:hover .link {
 
 .a-ct {
     margin-left: 1.5rem;
+}
+
+.spacing {
+    margin-top: 2rem;
 }
 
 #community > div:nth-child(1) > img:nth-child(1) {
