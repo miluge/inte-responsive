@@ -136,7 +136,7 @@ button {
     margin-top: 3rem;
 }
 
-/* PILL */
+/* PILLS & SHAPE */
 
 .container-wrapper-head::before {
     content: "";
@@ -148,6 +148,32 @@ button {
     left: 65%;
     z-index: -1;
     background: url(img/catbug_round.jpg) 0 0 repeat;
+    transform: rotate(44deg);
+  }
+
+  #testimonial::before {
+    content: "";
+    position: absolute;
+    width: 42.063rem;
+    height: 85.563rem;
+    border-radius: 31.25rem;
+    top: 20%;
+    left:  10%;
+    z-index: -2;
+    background: url(img/catbug_round.jpg) 0 0 repeat;
+    transform: rotate(44deg);
+  }
+    /*ROUND*/
+  #testimonial::before {
+    content: "";
+    position: absolute;
+    width: 42.063rem;
+    height: 85.563rem;
+    border-radius: 31.25rem;
+    top: -28%;
+    left: 65%;
+    z-index: -1;
+    background: url(img/catbug.PNG) 0 0 repeat;
     transform: rotate(44deg);
   }
   
@@ -251,7 +277,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(img/Bg.png), no repeat;
+    background-image: url(img/Bg.png);
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
 
 }
 
