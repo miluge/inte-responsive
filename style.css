@@ -108,6 +108,19 @@ section {
     font-size: 1.25rem;
 }
 
+.bold:after {
+    content: "";
+    display: block;
+    margin:0;
+    width: 1.9rem;
+    padding-top: 1.25rem;
+    border-bottom: 2px solid #BA43FC;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+
+
 /* Boutons*/
 
 button {
@@ -520,13 +533,20 @@ footer {
         content: none;
       }
     .price-block {
-        width: 16rem;
-        margin: 1rem;
+        width: 12rem;
+        margin: 0.80rem;
         padding-right: -1rem;
     }
     .best-btn {
-        margin-left: 2rem;
+        margin-left: 0.70rem;
+        padding-right: 0.85rem;
+        padding-left: 0.85rem;
+        font-size: 0.80rem;
     }
+    .li-left-indent {
+        margin-left: 0.80rem;
+    }
+
     #service {
         flex-wrap: wrap;
         margin-left: 35%;
@@ -535,14 +555,28 @@ footer {
     }
     .service-text {
         margin-top: 4rem;
-        margin-left: 22%;
+        margin-left: 25%;
     }
+
+    .article.box {
+        width: 18.5rem;
+    }
+
+    .article-left {
+        margin-left: 5rem;
+    }
+
+    .service-box {
+        max-width: 19.5rem;
+        margin: 0.75rem;
+    }
+
     #community {
         flex-direction: column;
-        margin-left: 50%;
+        margin-left: 66%;
     }
     .community-text {
-        margin-left: 11%;
+        margin-left: 9.8%;
     }
     .container-wrapper {
         width: 90%;
