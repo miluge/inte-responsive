@@ -18,6 +18,12 @@ p {
     font-size: 1.125rem;
 }
 
+.gris {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.125rem;
+    color: #5B5766;
+}
+
 a {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -37,6 +43,14 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.125rem;
     font-weight: bold;
+}
+
+h3.client {
+    font-family: 'Poppins', sans-serif;
+	font-size: 1.375em;
+    font-weight: bold;
+    color: #554D89;
+	margin: 0 0 5px 0;
 }
 
 /* utilitaires */
@@ -237,7 +251,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(img/Bg.png);
+    background-image: url(img/Bg.png), no repeat;
 
 }
 
@@ -245,9 +259,17 @@ main {
     width: 46.875rem;
 }
 
+
 div.mid-align:nth-child(2) > p:nth-child(1) > img:nth-child(1) {
     border-radius: 50%;
     background-color: #6852ED;
+}
+
+.client-job {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color: #7A7884;
+    margin-top: 1rem;
 }
 
 /* SERVICES */
@@ -330,7 +352,7 @@ article:hover {
 h3 {
     font-family: 'Poppins', sans-serif;
 	font-size: 1.375em;
-	font-weight: bold;
+    font-weight: bold;
 	margin: 0 0 5px 0;
 }
 
