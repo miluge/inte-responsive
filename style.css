@@ -582,10 +582,20 @@ footer {
         width: 90%;
         margin: 0 auto;
     }
-    .li-footer {
-        margin-left : 0.50rem;
+    .footer-block {
+        margin-top: 2.5rem;
     }
 
+    .footer-links {
+        margin-left: 1.5rem;
+        max-height: 12.25rem;
+    }
+    .li-footer {
+        margin-left : 0rem;
+    }
+    .li-top-aligner {
+        margin-top: 0rem;
+    }
 }
 
 @media (min-width: 992px) {
