@@ -648,6 +648,14 @@ footer {
 
 @media screen and (min-width: 768px) and (max-width: 991px){
 
+    h2 {
+        font-size: 2rem;
+    }
+
+    .community-text > h2 {
+        font-size: 2rem;
+    }
+
     .container-wrapper-head::before {
         display: none;
     }
@@ -661,7 +669,7 @@ footer {
     .burger {
         display: none;
     }
-    
+
     header {
         width: auto;
         height: 80%;
@@ -674,6 +682,7 @@ footer {
     .header-box {
         margin-top: 9.5rem;
         margin-bottom: 9.5rem;
+        margin-left: 3rem;
     }
     
     #price {
@@ -682,14 +691,21 @@ footer {
     }
 
     .price-block {
-        width: 250px;
-        margin: 0.85rem;
+        width: 200px;
+        margin: 0.5rem;
     }
 
     .best-btn {
-        margin-left: 1.8rem;
+        margin-left: 1rem;
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
     }
 
+    .testi-box>div>p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
     #service {
         width: 71.25rem;
         justify-content: center;
